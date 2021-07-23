@@ -1,0 +1,221 @@
+.carousel-inner img {
+    width: 100%;
+    height: 60vh;
+}
+
+/* Services section */
+.services-section{
+    padding: 3rem 5rem;
+    width:98;
+}
+.hero h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+.hero h1 span{
+    color: crimson;
+}
+.all-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    padding: 1rem;
+}
+.item h3{
+    margin-top: 2rem;
+}
+.icon{
+    color: crimson;
+    width: 5rem;
+    font-size: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+.icon i::after{
+    content: '';
+    width: 8rem;
+    height: 7rem;
+    top: -1.3rem;
+    left: -1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #262626;
+    z-index: -1;
+}
+/* End of Services section */
+footer{
+    height: 4rem;
+    margin-bottom: -1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+#about{
+    width: 100%;
+}
+.main-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.main-wrapper .left{
+    width: 50%;
+    text-align: right;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.main-wrapper .left h2{
+    text-transform: uppercase;
+}
+.main-wrapper .left h2 span{
+    color: crimson;
+}
+.main-wrapper .right{
+    width: 50%;
+    padding-top: 3rem;
+}
+.main-wrapper .right .json a{
+    text-decoration: none;
+    color: #000;
+    padding-right: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.main-wrapper .right .json a:hover{
+    color: crimson;
+}
+.main-wrapper .right .cng-img{
+    padding-top: 2rem;
+}
+.main-wrapper .cng-img img{
+    width: 20rem;
+    height: 13rem;
+}
+/* Images Gallery */
+.sbf{
+    background: #161616;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.left-col, .center-col, .right-col{
+    padding-left: 4rem;
+    margin-top: 2rem;
+}
+.left-col{
+    width: 25%;
+}
+.center-col{
+    width: 50%;
+}
+.right-col{
+    width: 25%;
+    margin-bottom: 6rem;
+}
+.right-col p span{
+    color: crimson;
+}
+.gal-items{
+    padding-bottom: 2rem;
+}
+.gal-items img{
+    width: 12rem;
+    height: 7rem;
+}
+/* End of Images Gallery */
+
+/* Media Query */
+@media only screen and (max-width:686px){
+    .all-items{
+        display: grid;
+    }
+    .main-wrapper{
+        display: flex;
+        flex-direction:column;
+    }
+    .main-wrapper .left {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .main-wrapper .left h2{
+        text-align: center;
+    }
+    .main-wrapper .right{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+@media only screen and (max-width:628px){
+    .main-wrapper .right .json a{
+        padding-right: 1.5rem;
+    }
+    .main-wrapper .left{
+        padding: 50px;
+    }
+}
+@media only screen and (max-width:508px){
+    .main-wrapper .right .json a{
+        padding-right: .6rem;
+    }
+}
+@media only screen and (max-width:1268px){
+    .main-wrapper{
+        width: 100%;
+    }
+    .main-wrapper .right{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 940px){
+    .main-wrapper{
+        width: 100%;
+    }
+    .main-wrapper .left {
+        position: relative;
+        width: 100%;
+        padding: 2.5rem;
+        text-align: center;
+    }
+    .main-wrapper .right{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 769px){
+    .main-wrapper .right .json a{
+        padding-right: .4rem;
+    }
+    .sbf{
+        display: grid;
+        padding: 0 1rem;
+    }
+    .left-col, .center-col, .right-col{
+        width: 100%;
+    }
+    .sbf h3{
+        font-size: 2rem;
+    }
+    .sbf p{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 322px){
+    .main-wrapper .cng-img img{
+        width: 18rem;
+        height: 12rem;
+    }
+}
+/* End of Media Query */

@@ -1,0 +1,91 @@
+
+.hero{
+    background-image: url('./images/img3.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98.9vw;
+}
+.hero h1{
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #576457;
+}
+.hero p{
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #576457;
+}
+.head{
+    width: 100%;
+}
+.head h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.head h1 span{
+    color: crimson;
+}
+h2{
+    text-transform: capitalize;
+}
+h2 span{
+    color: crimson;
+}
+.head .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.head .wrapper .left-col{
+    width: 50%;
+}
+.head .wrapper .right-col{
+    padding-left: 5rem;
+}
+.head .wrapper .right-col img{
+    width: 25rem;
+    height: 50rem;
+}
+footer{
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/* Media Query */
+@media (max-width:1331px){
+    .wrapper .right-col{
+        margin-right:4rem;
+    }
+}
+@media (max-width:968px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:440px){
+    .head .wrapper .right-col img{
+        width: 22rem;
+        height: 50rem;
+    }
+}
+@media (max-width:400px){
+    .head .wrapper .right-col img{
+        width: 20rem;
+        height: 50rem;
+    }
+}
+@media (max-width:345px){
+    .head .wrapper .right-col img{
+        width: 17rem;
+        height: 50rem;
+    }
+}
+/*End of  Media Query */

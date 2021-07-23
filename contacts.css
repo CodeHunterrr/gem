@@ -1,0 +1,259 @@
+main-section{
+    width: 98vw;
+}
+nav{
+    width: 98.9vw;
+}
+.hero{
+    background-image: url('./images/img3.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98.9vw;
+}
+.hero h1{
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #576457;
+}
+.hero p{
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #576457;
+}
+.contact-section{
+    width: 98.9vw;
+    height: auto;
+}
+.contact-section h1, h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact-section span{
+    color: crimson;
+}
+.contact-section h3{
+    text-transform: capitalize;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem; 
+    padding-top: 3rem;
+}
+.wrapper .left-col,
+.wrapper .right-col{
+    flex: 1;
+}
+.left-col .content h4{
+    font-size: 3rem;
+}
+.left-col .content p{
+    font-size: 1.5rem;
+}
+.left-col .contact-info{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.left-col .contact-info ul{
+    list-style: none;
+}
+.left-col .contact-info ul li i{
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: #fff;
+    background-color: crimson;
+    border-radius: .5rem;
+}
+.left-col .contact-info ul li .text{
+    font-size: 2rem;
+    padding-left: 1rem;
+    color: #000;
+}
+
+.left-col .social-info{
+    margin-bottom: 2rem;
+    
+}
+.left-col .social-info ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.left-col .social-info ul li a{
+    text-decoration: none;
+}
+.left-col .social-info ul li i{
+    font-size: 2rem;
+    color: crimson;
+    padding-left: 1rem;
+}
+.left-col .social-info ul li i:hover{
+    color: #0d6efd;
+}
+.right-col .form-wrapper{
+    width: 30rem;
+    height: 30rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-left: 2rem;
+}
+
+.right-col .form-wrapper .form-control{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #808080;
+    color: #000;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+}
+input{
+    height: 4.5rem;
+}
+form .submit{
+    background: crimson;
+    border-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    
+}
+form .submit:hover{
+    background-color: #576574;
+    cursor: pointer;
+}
+footer{
+    height: 4rem;
+    width: 100%;
+    margin-bottom: -1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/* Media Query */
+@media only screen and (max-width: 960px){
+    .hero{
+        width: 99.9vw;
+    }
+    .contact-section .wrapper{
+        flex-direction: column-reverse;
+    }
+    .right-col{
+        margin-bottom: 5rem;
+        margin-right: 5rem;
+        margin-left: 2rem;
+    }
+}
+@media only screen and (max-width: 426px){
+    section{
+        overflow: hidden;
+    }
+
+    nav{
+        width: 110%;
+    }
+    .hero{
+        background-size: cover;
+        width: 108%;
+    }
+    .contact-section .wrapper{
+        flex-direction: column-reverse;
+    }
+    .right-col{        
+        margin-bottom: 3rem;
+        margin-right: 10rem;
+        margin-left: 3rem;
+    }
+    .form-control{
+        width: 25rem;
+    }
+    .left-col{
+        width: 100%;
+        float: left;
+        margin-left: -30%;
+    }
+    
+}
+@media only screen and (max-width: 376px){
+    section{
+        overflow: hidden;
+    }
+
+    nav{
+        width: 110%;
+    }
+    .hero{
+        background-size: cover;
+        width: 108%;
+    }
+    .contact-section .wrapper{
+        flex-direction: column-reverse;
+    }
+    .right-col{        
+        margin-bottom: 3rem;
+        margin-right: 10rem;
+        margin-left: 3rem;
+    }
+    .form-control{
+        width: 22rem;
+    }
+    .left-col{
+        width: 100%;
+        float: left;
+        margin-left: -30%;
+        margin-top: 2rem;
+    }
+    .left-col .contact-info{
+        width: 100%;
+        margin-left: -10%;
+        margin-right: 2rem;
+    }
+    
+}
+@media only screen and (max-width: 326px){
+    section{
+        overflow: hidden;
+    }
+
+    nav{
+        width: 110%;
+    }
+    .hero{
+        background-size: cover;
+        width: 108%;
+    }
+    .contact-section .wrapper{
+        flex-direction: column-reverse;
+    }
+    .right-col{        
+        margin-bottom: 3rem;
+        margin-right: 10rem;
+        margin-left: 3rem;
+    }
+    .form-control{
+        width: 18rem;
+    }
+    .left-col{
+        width: 100%;
+        float: left;
+        margin-left: -55%;
+    }
+    .left-col .contact-info{
+        width: 100%;
+        margin-left: -10%;
+        margin-right: 2rem;
+    }
+    
+}
+/* End of Media Query */
